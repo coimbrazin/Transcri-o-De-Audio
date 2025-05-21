@@ -1,0 +1,16 @@
+# Pasta da virtualenv
+venv/
+.env
+
+# Arquivos temporários do sistema
+__pycache__/
+*.pyc
+
+# Pasta com ffmpeg binários (não subir)
+libs/ffmpeg/
+
+# Logs e arquivos temporários
+*.log
+
+# Dados grandes ou sensíveis que não precisa subir
+audios/
