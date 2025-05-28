@@ -1,5 +1,6 @@
 import streamlit as st
 from transcriber import transcrever_audio
+from translator import traduzir  # ALTERADO para a função genérica traduzir
 from pathlib import Path
 import time
 
@@ -70,3 +71,10 @@ if audio is not None:
 
     st.subheader("📝 Transcrição:")
     st.write(texto)
+
+    # Tradução automática detectando idioma
+    with st.spinner("🔁 Traduzindo..."):
+        traducao = traduzir(texto)
+
+    st.subheader("🌍 Tradução:")
+    st.write(traducao)
