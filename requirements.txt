@@ -2,4 +2,4 @@ streamlit
 pydub
 torch
 ffmpeg-python
-openai-whisper
+openai-whisper==20230314
