@@ -22,7 +22,7 @@ def transcrever_audio(caminho_arquivo):
     audio.export(temp_wav, format="wav")
 
     # Carrega o modelo Whisper (pode ajustar o modelo para 'small', 'base', etc)
-    modelo = whisper.load_model("base")
+    modelo = whisper.load_model("medium")
 
     # Faz a transcrição
     resultado = modelo.transcribe(temp_wav)
