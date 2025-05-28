@@ -1,6 +1,6 @@
-streamlit
-pydub
+numpy
 torch
 ffmpeg-python
-openai-whisper==20230314
-numpy
+pydub
+streamlit
+openai-whisper
